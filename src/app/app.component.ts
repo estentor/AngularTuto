@@ -7,9 +7,32 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  text = 'app';
-  myDisabledValue = false;
-  
+  records = [
+    {
+      name : 'Luis',
+      online : 'true'
+    },
+    {
+      name : 'Lucho',
+      online : 'false'
+    },
+    {
+      name : 'Liclok',
+      online : 'true'
+    },
+    {
+      name : 'Juancho',
+      online : 'true'
+    },
+    {
+      name : 'Pepe',
+      online : 'false'
+    },
+    {
+      name : 'Checo',
+      online : 'true'
+    }
+  ]
   constructor() {
   }
 

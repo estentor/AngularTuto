@@ -1,0 +1,19 @@
+tr.even {
+    background: #CDCDCD;
+    color: #000000;
+}
+
+tr.odd {
+    background: #AA3300;
+    color: #000000;
+}
+
+tr.first{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+tr.last{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
