@@ -7,14 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'app';
+  text = 'app';
   myDisabledValue = false;
   
   constructor() {
   }
 
-  callMyFunction() {
-    this.myDisabledValue = !this.myDisabledValue
-    console.log('Function called')
-  }
+
 }
