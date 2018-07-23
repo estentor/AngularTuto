@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
+import { RecordsService } from './records.service'
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],//used to add services 
+  providers: [RecordsService],//used to add services  and make it visible to all app
   bootstrap: [AppComponent]
 })
 export class AppModule { }
