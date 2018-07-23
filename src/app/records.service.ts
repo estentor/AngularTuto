@@ -1,38 +1,19 @@
 import { Injectable } from '@angular/core';
 
+import { HttpClient } from '@angular/common/http'
+
+
+
 @Injectable({
   providedIn: 'root'
 })
 export class RecordsService {
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+    
+   }
 
   getData() {
-    return [
-    {
-      name : 'Luis',
-      online : 'true'
-    },
-    {
-      name : 'Lucho',
-      online : 'false'
-    },
-    {
-      name : 'Liclok',
-      online : 'true'
-    },
-    {
-      name : 'Juancho',
-      online : 'true'
-    },
-    {
-      name : 'Pepe',
-      online : 'false'
-    },
-    {
-      name : 'Checo',
-      online : 'true'
-    }
-  ]
+    return this.http.get<myData>('http://localhost:1234/file.php');
   }
 }
