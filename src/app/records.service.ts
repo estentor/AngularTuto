@@ -14,6 +14,6 @@ export class RecordsService {
    }
 
   getData() {
-    return this.http.get<myData>('http://localhost:1234/file.php');
+    return this.http.get<any>('http://localhost:1234/file.php');
   }
 }
