@@ -20,7 +20,6 @@ export class AppComponent {
 
   ngOnInit(){
     this.myFirstService.getData().subscribe(data => {
-      //console.log("We Got ", data.obj)
       this.records = data.obj
     })
   }
